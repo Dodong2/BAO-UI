@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Color lists */
+:root {
+    --white: #fff;
+    --black: rgb(52, 52, 52);
+    --font-color: #001121;
+    --bgcolor: #f0e9d9;
+    --bgcolor-login: #f0e9d9;
+    --blue-nav: #0751a9;
+    --green-nav: #69a84f;
+    --yellow-nav: #f1c332;
+    --red-nav: #cc0001;
+}
+
+/* Fonts */
+@font-face {
+    font-family: "Poppins-light";
+    src: url('./components//fonts/Poppins-Light.ttf');
+}
+
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url('./components/fonts/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-family: "Poppins-ExtraBold";
+    src: url('./components/fonts/Poppins-ExtraBold.ttf');
+}
+
+body {
+    height: 100svh;
+    background: var(--bgcolor);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.main-container {
+    margin: 0 auto;
+    width: 1350px;
+    border: 1px solid red;
+}
+
+/* navigation bar */
+nav {
+    background:var(--white);
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid red;
+}
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.left img {
+    height: 70px;
+    width: 70px;
+}
+.left h1 {
+    font-family: Poppins-Bold;
+    font-size: 2.5em;
+}
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right ul {
+    display: flex;
+}
+.right li {
+    font-family: Poppins-light;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    list-style: none;
+    color: var(--font-color);
+}
+/* Login Page */
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.input1 img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0.5;
+    height: 500px;
+    width: 500px;
+    object-fit: contain;
+}
+
+.input1,
+.input2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input1 .icon1,
+.input2 .icon2 {
+    font-size: 50px;
+    color: var(--font-color);
+}
+
+.input1 h1,
+.input2 h1 {
+    font-family: Poppins-Bold;
+    font-size: 1.5rem;
+    color: var(--font-color);
+}
+
+.input1 input,
+.input2 input {
+    width: 550px;
+    height: 50px;
+    border-radius: 40px;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    opacity: 0.8;
+    color: var(--font-color);
+    caret-color: var(--blue-nav);
+}
+
+.input2 .password-container {
+    display: flex;
+    align-items: center;
+}
+
+.input2 .icon3 {
+    position: absolute;
+    left: 92%;
+    font-size: 25px;
+    color: var(--font-color);
+}
+
+.login-container button {
+    width: 269px;
+    font-family: 'Poppins-Bold';
+    font-size: 15px;
+    font-weight: 900;
+    color: white;
+    cursor: pointer;
+    margin: 20px;
+    text-align: center;
+    padding: 14px 10px;
+    gap: 10px;
+    border: none !important;
+    border-radius: 50px;
+    background: linear-gradient(to right, var(--blue-nav), var(--green-nav), var(--yellow-nav), var(--red-nav));
+    background-size: 300% 100%;
+    transition: background-position 0.4s ease-in-out, box-shadow 0.4s ease-in-out,
+        color 0.4s ease-in-out;
+}
+
+.login-container button:hover {
+    background-position: 100% 0;
+    color: white;
+}
+
+/* Footer login */
+.footer-login footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 100px;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color: var(--font-color);
+}
+
+.footer-login footer .loc,
+.footer-login footer .cont,
+.footer-login footer .soc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.footer-login footer h1 {
+    font-weight: 600;
+    font-family: Poppins-light;
+}
+
+.icons {
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* For Mobile */
+@media only screen and (max-width: 767px) {
+    .main-container {
+        width: calc(100%);
+    }
+
+    /* Login Page */
+    .login-container {
+        top: 40%;
+    }
+
+    .input1 img {
+        height: 350px;
+        width: 350px;
+    }
+
+    .input1 .icon1,
+    .input2 .icon2 {
+        font-size: 30px;
+    }
+
+    .input1 h1,
+    .input2 h1 {
+        font-size: 1.3rem;
+    }
+
+    .input1 input,
+    .input2 input {
+        width: 330px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .input2 .icon3 {
+        left: 90%;
+        font-size: 20px;
+    }
+
+    .login-container button {
+        width: 200px;
+        font-size: 15px;
+        font-weight: 600;
+        padding: 10px 10px;
+    }
+
+    /* Footer login */
+    .footer-login footer {
+        flex-direction: column;
+    }
+
+    .footer-login footer h1 {
+        font-size: 14px;
+    }
+
+    .icons {
+        font-size: 20px;
+    }
+}
+
+/* For Tablets */
+@media only screen and (max-width: 768px) and (max-width: 991px) {
+    .main-container {
+        width: 100%;
+    }
+}
+
+/* For laptops */
+@media only screen and (max-width: 992px) and (max-width: 1199px) {
+    .main-container {
+        width: 100%;
+    }
+}
+
+/* For Desktops */
+@media only screen and (min-width: 1200px) {
+    .main-container {
+        width: 100%;
+    }
+}
