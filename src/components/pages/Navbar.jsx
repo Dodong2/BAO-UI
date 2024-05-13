@@ -5,12 +5,13 @@ import { IoMenu } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
 import { IoMdHome } from "react-icons/io";
 import { FaShoppingBasket } from "react-icons/fa";import { BsFillTelephoneFill } from "react-icons/bs";
+
 import { IoMdAlert } from "react-icons/io";const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <>
             <div className="main-container">
-                <nav>
+            <div className='navbar-links'>
                     <div className="left">
                         <img src={LspuLogo1} />
                         <h1>BUSINESS AFFAIRS OFFICE</h1>
@@ -35,7 +36,7 @@ import { IoMdAlert } from "react-icons/io";const Navbar = () => {
                             </header>
                         </div>
                     </div>
-                </nav>
+                </div>
                 {/* Responsive phone navbar */}
                 <div className='nav-phone'>
                     <aside className={`sidebar ${isOpen ? "open" : ""}`}>

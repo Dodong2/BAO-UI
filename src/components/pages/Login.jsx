@@ -64,7 +64,7 @@ const login = () => {
 
             <div className="soc">
               <h1>Socials:</h1>
-              <a href="https://web.facebook.com/messages/t/6312333535555362/"><FaFacebook className="icons" /></a>
+              <a href="https://web.facebook.com/groups/414182603901608/"><FaFacebook className="icons" /></a>
               <TbMailFilled className="icons" />
             </div>
 

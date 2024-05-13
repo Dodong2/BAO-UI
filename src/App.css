@@ -35,6 +35,7 @@
 body {
     height: 100svh;
     background: var(--bgcolor);
+    padding-top: 50px;
 }
 
 ::-webkit-scrollbar {
@@ -44,14 +45,18 @@ body {
 .main-container {
     margin: 0 auto;
     width: 1350px;
-    border: 1px solid red;
 }
 
 /* navigation bar */
-nav {
+.navbar-links {
     background: var(--white);
     display: flex;
     justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+
 }
 
 .left {
@@ -257,7 +262,7 @@ nav {
     justify-content: space-evenly;
     gap: 100px;
     position: absolute;
-    top: 95%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -275,7 +280,7 @@ nav {
 
 .footer-login footer h1 {
     font-weight: 600;
-    font-family: Poppins-light;
+    font-family: "Poppins-light";
 }
 
 .icons {
@@ -288,7 +293,7 @@ nav {
 }
 
 .sidebar {
-    position: absolute;
+    position: fixed;
     overflow: hidden;
     top: 0;
     right: 0;
@@ -296,6 +301,7 @@ nav {
     height: 100%;
     background: var(--white);
     transition: width 0.4s;
+    z-index: 100;
 }
 
 .sidebar.open {
@@ -330,10 +336,6 @@ nav {
     align-items: center;
 }
 
-.sidebar header>img {
-    height: 28px;
-}
-
 .sidebar nav {
     display: grid;
     padding: 6px;
@@ -346,8 +348,8 @@ nav {
     align-items: center;
     height: 44px;
     width: 44px;
-    font-family: "Poppins";
-    font-size: 20px;
+    font-family: "Poppins-Bold";
+    font-size: 18px;
     line-height: 1;
     padding: 0 12px;
     border-radius: 8px;
@@ -355,7 +357,11 @@ nav {
     color: var(--color-white);
     border: none;
 }
-.sidebar nav>.layer1:hover, .sidebar nav>.layer2:hover, .sidebar nav>.layer3:hover, .sidebar nav>.layer4:hover {
+
+.sidebar nav>.layer1:hover,
+.sidebar nav>.layer2:hover,
+.sidebar nav>.layer3:hover,
+.sidebar nav>.layer4:hover {
     color: var(--white);
     transition: all ease .3s;
 }
@@ -363,6 +369,7 @@ nav {
 .sidebar nav>.layer1:hover {
     background: var(--blue-nav);
 }
+
 .sidebar nav>.layer2:hover {
     background: var(--green-nav);
 }
@@ -374,22 +381,6 @@ nav {
 .sidebar nav>.layer4:hover {
     background: var(--red-nav);
 }
-
-.sidebar nav>button span::after {
-    content: "";
-    width: 0;
-    height: 3px;
-    background: var(--white);
-    margin: auto;
-    display: block;
-}
-
-.sidebar nav>button span:hover::after {
-    width: 100%;
-    transition: 0.3s linear;
-}
-
-
 
 .sidebar header>img,
 .sidebar nav>button p {
@@ -405,7 +396,90 @@ nav {
     display: none;
 }
 
+/*--------Home Page css---------*/
+.home-container {
+    padding: 50px;
+}
 
+.swiper-container {
+    border-radius: 50px;
+}
+
+.swiper-container .element1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+}
+.element1 {
+    background: url(./components/image/lspu1.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+}
+
+.element1 img {
+    height: 250px;
+    width: 250px;
+    background: var(--white);
+    border-radius: 50%;
+}
+
+.element1 h1,
+.element1 p {
+    text-align: center;
+}
+
+.element1 h1 {
+    color: var(--white);
+    font-family: "Poppins-ExtraBold";
+    font-size: 4em;
+}
+
+.element1 p {
+    color: var(--white);
+    font-family: "Poppins-Bold";
+    font-size: 1.7em;
+}
+
+/*--------Home Page Footer---------*/
+.home-footer {
+    background: var(--white);
+    padding: 20px;
+}
+
+.footer-layer1 h1 {
+    text-align: center;
+    font-family: "Poppins-Bold";
+    font-size: 1.8em;
+}
+
+.footer-layer1 p {
+    text-align: center;
+    font-family: "Poppins-light";
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.footer-layer2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-layer2 h1 {
+    font-family: "Poppins-Bold";
+    font-size: 1.2em;
+}
+
+.footer-layer2 p {
+    font-family: "Poppins-light";
+    font-size: 1.3em;
+}
 
 
 
@@ -441,13 +515,16 @@ nav {
 
 /* For Mobile */
 @media only screen and (max-width: 767px) {
+    body {
+        padding-top: 70px;
+    }
     .main-container {
         width: calc(100%);
     }
 
     /* navigation bar */
-    nav {
-        padding: 10px;
+    .navbar-links {
+        padding: 20px;
         justify-content: space-between;
     }
 
@@ -514,8 +591,14 @@ nav {
     /* Footer login */
     .footer-login footer {
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;        
     }
+    .footer-login footer .loc,
+.footer-login footer .cont,
+.footer-login footer .soc {
+    padding-bottom: 20px;
+}
+
 
     .footer-login footer h1 {
         font-size: 14px;
@@ -523,6 +606,61 @@ nav {
 
     .icons {
         font-size: 20px;
+    }
+
+    /*--------Home Page css---------*/
+    .home-container {
+        padding: 0px;
+    }
+
+    .swiper-container {
+        border-radius: 0px;
+    }
+    .element1 {
+        background: url(./components/image/lspu1.png);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 0px;
+    }
+
+    .element1 img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .element1 h1 {
+        font-size: 1.2em;
+    }
+
+    .element1 p {
+        font-size: .6em;
+    }
+
+
+    /*--------Home Page Footer---------*/
+    .home-footer {
+        padding: 10px;
+    }
+
+    .footer-layer1 h1 {
+        font-size: 1.2em;
+    }
+
+    .footer-layer1 p {
+        font-size: .8em;
+    }
+
+    .footer-layer2 {
+        flex-direction: column;
+    }
+
+    .footer-layer2 h1 {
+        font-size: .8em;
+    }
+
+    .footer-layer2 p {
+        font-size: .8em;
     }
 }
 
@@ -538,7 +676,8 @@ nav {
     .main-container {
         width: 100%;
     }
-    nav {
+
+    .navbar-links {
         padding: 10px;
         justify-content: space-between;
     }
