@@ -18,7 +18,7 @@ import { IoMdAlert } from "react-icons/io";const Navbar = () => {
                     </div>
                     <div className="right">
                         <ul>
-                            <Link to='/'><li className='layer1 custom-hover'><span>HOME</span></li></Link>
+                            <Link to='/Home'><li className='layer1 custom-hover'><span>HOME</span></li></Link>
                             <Link to='/About'><li className='layer2 custom-hover'><span>ABOUT</span></li></Link>
                             <Link to='/'><li className='layer3 custom-hover'><span>CONTACTS</span></li></Link>
                             <Link to='/'><li className='layer4 custom-hover'><span>BASKET</span></li></Link>
@@ -51,8 +51,8 @@ import { IoMdAlert } from "react-icons/io";const Navbar = () => {
                                 </button>
                             </header>
                             <nav className={isOpen ? "" : "notxt"}>
-                                <Link to="" className='layer1'><button><IoMdHome /><span>HOME</span></button><hr/></Link>
-                                <Link to="/" className='layer2'><button ><IoMdAlert/> <span>ABOUT</span></button></Link><hr/>
+                                <Link to="/Home" className='layer1'><button><IoMdHome /><span>HOME</span></button><hr/></Link>
+                                <Link to="/About" className='layer2'><button ><IoMdAlert/> <span>ABOUT</span></button></Link><hr/>
                                 <Link to="/" className='layer3'><button><BsFillTelephoneFill/> <span>CONTACTS</span></button></Link><hr/>
                                 <Link to="/" className='layer4'><button><FaShoppingBasket/><span>BASKET</span></button></Link>
                             </nav>

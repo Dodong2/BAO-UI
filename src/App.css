@@ -610,6 +610,298 @@ a:-webkit-any-link {
     font-size: 1.3em;
 }
 
+/*--------About Page css---------*/
+.about-container {
+    margin-top:34px;
+
+}
+/*--------About Content 1---------*/
+.about-content1 {
+    background: url(./components/image/lspu1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom 200%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 0px 15px 0px;
+}
+.about-content1 img {
+    height: 250px;
+    width: 250px;
+    background: var(--white);
+    border-radius: 50%;
+}
+.about-content1 h1,
+.about-content1 p {
+    text-align: center;
+}
+
+.about-content1 h1 {
+    color: var(--white);
+    font-family: "Poppins-ExtraBold";
+    font-size: 4em;
+}
+
+.about-content1 p {
+    color: var(--white);
+    font-family: "Poppins-Bold";
+    font-size: 1.7em;
+}
+
+/*--------About Content 2---------*/
+.about-content2 {
+    padding: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.about-content2 h1, .about-content2 h2 {
+    text-align: center;
+}
+.about-content2 h1 {
+    font-family: "Poppins-ExtraBold";
+    font-size: 60px;
+}
+.about-content2 h2 {
+    font-family:  "Poppins-Bold";
+    font-style: italic;
+    font-size: 25px;
+}
+.about-content2 h3 {
+    font-family: "Poppins-Bold";
+    font-size: 20px;
+}
+.about-content2 p {
+    font-family: "Poppins-light";
+    font-weight: 600;
+    text-align: justify;
+    text-indent: 20px;
+}
+/*--------About Content 3---------*/
+.about-content3 {
+    padding: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background: var(--green-nav);
+    color: var(--white);
+}
+.about-content3 h1, .about-content3 h2 {
+    text-align: center;
+}
+.about-content3 h1 {
+    font-family: "Poppins-ExtraBold";
+    font-size: 60px;
+}
+.about-content3 h2 {
+    font-family:  "Poppins-Bold";
+    font-style: italic;
+    font-size: 25px;
+}
+.about-content3 h3 {
+    font-family: "Poppins-Bold";
+    font-size: 20px;
+}
+.about-content3 p {
+    font-family: "Poppins-light";
+    font-weight: 600;
+    text-align: justify;                                                                                                    
+    text-indent: 20px;
+}
+.about-content3 span {
+    font-family: "Poppins-light";
+    text-indent: 20px;
+}
+/*--------About Content 4---------*/
+.about-content4 {
+    padding: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.about-content4 h1, .about-content4 h2 {
+    text-align: center;
+}
+.about-content4 h1 {
+    font-family: "Poppins-ExtraBold";
+    font-size: 60px;
+}
+.about-content4 h2 {
+    font-family:  "Poppins-Bold";
+    font-style: italic;
+    font-size: 25px;
+}
+.about-content4 h3 {
+    font-family: "Poppins-Bold";
+    font-size: 20px;
+}
+.about-content4 p, .about-content4 span {
+    font-family: "Poppins-light";
+    font-weight: 600;
+    text-align: justify;
+    text-indent: 20px;
+}
+/*--------About Content 5---------*/
+.about-content5 {
+    background: var(--yellow-nav);
+    padding: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.about-content5 h1, .about-content5 h2 {
+    text-align: center;
+}
+.about-content5 h1 {
+    font-family: "Poppins-ExtraBold";
+    font-size: 60px;
+}
+.about-content5 h2 {
+    font-family:  "Poppins-Bold";
+    font-size: 25px;
+}
+.about-content5 h3 {
+    font-family: "Poppins-Bold";
+    font-size: 20px;
+}
+.about-content5 p {
+    font-family: "Poppins-light";
+    font-weight: 600;
+    text-align: justify;
+    text-indent: 20px;
+}
+.about-content5 p, .about-content5 span {
+    font-family: "Poppins-light";
+    font-weight: 600;
+    text-align: justify;
+    text-indent: 20px;
+}
+/*--------About Content 6---------*/
+.about-content6 {
+    padding: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.about-content6 h1, .about-content6 h2 {
+    text-align: center;
+}
+.about-content6 h1 {
+    font-family: "Poppins-ExtraBold";
+    font-size: 60px;
+}
+.about-content6 h2 {
+    font-family:  "Poppins-Bold";
+    font-size: 25px;
+}
+.about-content6 h3 {
+    font-family: "Poppins-Bold";
+    font-size: 20px;
+}
+.about-content6 p {
+    font-family: "Poppins-light";
+    font-weight: 600;
+    text-align: justify;
+    text-indent: 20px;
+}
+.about-content6 p, .about-content6 span {
+    font-family: "Poppins-light";
+    font-weight: 600;
+    text-align: justify;
+    text-indent: 20px;
+}
+/*--------About Content 7---------*/
+.about-content7 {
+    background: var(--red-nav);
+    padding: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: var(--white);
+}
+.about-content7 h1, .about-content7 h2 {
+    text-align: center;
+}
+.about-content7 h1 {
+    font-family: "Poppins-ExtraBold";
+    font-size: 60px;
+}
+.about-content7 h2 {
+    font-family:  "Poppins-Bold";
+    font-size: 25px;
+}
+.about-content7 h3 {
+    font-family: "Poppins-Bold";
+    font-size: 20px;
+}
+.about-content7 p {
+    font-family: "Poppins-light";
+    font-weight: 600;
+    text-align: justify;
+    text-indent: 20px;
+}
+.about-content7 p, .about-content7 span {
+    font-family: "Poppins-light";
+    font-weight: 600;
+    text-align: justify;
+    text-indent: 20px;
+}
+/*--------About Content 8---------*/
+.about-content8 {
+    padding: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.about-content8 h1, .about-content8 h2 {
+    text-align: center;
+}
+.about-content8 h1 {
+    font-family: "Poppins-ExtraBold";
+    font-size: 60px;
+}
+.about-content8 h2 {
+    font-family:  "Poppins-Bold";
+    font-size: 25px;
+    font-style: italic;
+}
+.about-content8 h3 {
+    font-family: "Poppins-Bold";
+    font-size: 20px;
+}
+.about-content8 p {
+    font-family: "Poppins-light";
+    font-weight: 600;
+    text-align: justify;
+    text-indent: 20px;
+}
+.about-content8 p, .about-content8 span {
+    font-family: "Poppins-light";
+    font-weight: 600;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* For Mobile */
 @media only screen and (max-width: 767px) {
     body {
@@ -751,7 +1043,9 @@ a:-webkit-any-link {
     border-top-right-radius: 0px;
     display: flex;
     justify-content: space-between;
+    background-repeat: no-repeat;
     position: block;
+    padding-right: 6px;
     padding: 61px;
 }
 
