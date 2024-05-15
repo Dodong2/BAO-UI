@@ -8,6 +8,7 @@
   --white: #fff;
   --black: #000;
   --red: rgb(251, 36, 36);
+  --orage: #ff5a00;
   --black: rgb(52, 52, 52);
   --gray: rgb(48, 48, 48);
   --font-color: #001121;
@@ -419,6 +420,7 @@ a:-webkit-any-link {
 .swiper-container {
   border-radius: 50px;
   --swiper-navigation-size: 44px;
+  --swiper-theme-color: #007aff;
 }
 
 .swiper-container .element1 {
@@ -878,7 +880,6 @@ a:-webkit-any-link {
 /*--------Supply Page css---------*/
 .supply-container {
     margin-top: 34px;
-    border: 1px solid red;
     padding: 25px;
 }
 /*--------Supply Content 1---------*/
@@ -916,19 +917,14 @@ a:-webkit-any-link {
 /*--------Supply Content 2---------*/
 .supply-content2 {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     margin-top: 50px;
 }
-.supply-content2 .mySwiper {
-    border: 1px solid red;
-    --swiper-navigation-size: 30px;
-    padding-bottom: 50px;
-}
-/*--------Supply Product Carousel---------*/
+/*--------Supply Product css---------*/
 .supp-card {
     background: var(--white);
-    padding: 10px;
+    padding: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -949,8 +945,8 @@ a:-webkit-any-link {
     border-radius: 50%;
 }
 .card-contents .img2 {
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     object-fit: contain;
 }
 .card-contents h1 {
@@ -987,7 +983,36 @@ a:-webkit-any-link {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
-
+/*--------Basket button contents css---------*/
+.basket-container {
+  padding: 25px;
+  padding-left: 100px;
+  padding-right: 100px;
+  color: var(--white);
+}
+.basket-content {
+  background: var(--orage);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 30px;
+}
+.basket-content .icon5 {
+  font-size: 9em;
+}
+.basket-content h1 {
+  font-family: 'Poppins-ExtraBold';
+  text-align: center;
+}
+.basket-content h1 span:nth-child(1){
+  letter-spacing: .5em;
+  font-size: 4em;
+}
+.basket-content h1 span:nth-child(3){
+  letter-spacing: 1em;
+  font-size: 5em;
+  font-weight: 900;
+}
 
 
 
@@ -1356,6 +1381,37 @@ a:-webkit-any-link {
   .about-content8 span {
     font-size: .8em;
   }
+  /*--------Supply Content 1---------*/
+.supply-content1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.supply-container input {
+  width: 250px;
+  font-size: 20px;
+}
+/*--------Supply Content 2---------*/
+.supply-content2 {
+  flex-direction: column;
+  gap: 20px;
+}
+/*--------Basket button contents css---------*/
+.basket-container {
+  padding: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.basket-content .icon5 {
+  font-size: 3em;
+}
+
+.basket-content h1 span:nth-child(1){
+  font-size: 1em;
+}
+.basket-content h1 span:nth-child(3){
+  font-size: 1.3em;
+}
 }
 
 /* For Tablets */

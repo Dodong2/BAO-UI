@@ -21,7 +21,7 @@ import 'swiper/css/scrollbar'; const Home = () => {
           <div className='swiper-container'>
             <Swiper
               slidesPerView={1}
-              spaceBetween={50}
+              spaceBetween={30}
               loop={true}
               pagination={{
                 clickable: true,
