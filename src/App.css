@@ -6,7 +6,10 @@
 /* Color lists */
 :root {
   --white: #fff;
+  --black: #000;
+  --red: rgb(251, 36, 36);
   --black: rgb(52, 52, 52);
+  --gray: rgb(48, 48, 48);
   --font-color: #001121;
   --bgcolor: #f0e9d9;
   --bgcolor-login: #f0e9d9;
@@ -871,6 +874,136 @@ a:-webkit-any-link {
   text-align: justify;
   text-indent: 20px;
 }
+
+/*--------Supply Page css---------*/
+.supply-container {
+    margin-top: 34px;
+    border: 1px solid red;
+    padding: 25px;
+}
+/*--------Supply Content 1---------*/
+.supply-content1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.supply-container input {
+    width: 650px;
+    height: 50px;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+    font-family: 'Poppins-light';
+    font-size: 25px;
+    font-style: italic;
+    border: none;
+    opacity: 0.8;
+    padding-left: 20px;
+    color: var(--font-color);
+    caret-color: var(--blue-nav);
+}
+.supply-container .icon4 {
+    font-size: 30px;
+    color: var(--white);
+    background: var(--black);
+    height: 50px;
+    width: 70px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*--------Supply Content 2---------*/
+.supply-content2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.supply-content2 .mySwiper {
+    border: 1px solid red;
+    --swiper-navigation-size: 30px;
+    padding-bottom: 50px;
+}
+/*--------Supply Product Carousel---------*/
+.supp-card {
+    background: var(--white);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+.card-contents {
+    position: relative;
+}
+.card-contents .img1 {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    background: var(--white);
+    border-radius: 50%;
+}
+.card-contents .img2 {
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+}
+.card-contents h1 {
+    font-family: "Poppins-Bold";
+    text-align: center;
+    columns: 1;
+}
+.card-contents span:nth-child(4) {
+    color: var(--red);
+    font-style: italic;
+}
+.card-stocks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-stocks div {
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid var(--gray);
+    font-size: 20px;
+}
+.card-stocks button {
+    background: var(--gray);
+    color: var(--white);
+    font-size: 50px;
+}
+.card-stocks button:nth-child(1) {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.card-stocks button:nth-child(3) {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* For Mobile */
 @media only screen and (max-width: 767px) {

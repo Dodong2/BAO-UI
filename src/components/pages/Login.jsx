@@ -24,17 +24,17 @@ const login = () => {
   return (
     <>
       <div className="main-container">
-        {/*Login page*/}
+        {/*-----Login page-----*/}
         <div className="login-container">
           <form action="" method="">
-            {/* Login input 1 */}
+            {/*-----Login input 1 -----*/}
             <div className="input1">
               <img src={LspuLogo1} />
               <FaUser className="icon1" />
               <h1>Enter Student Number</h1>
-              <input type="text" id="password" required />
+              <input type="text" id="student" required />
             </div><br />
-            {/* Login input 2 */}
+            {/*----- Login input 2 -----*/}
             <div className="input2">
               <IoIosLock className="icon2" />
               <h1>Enter Password</h1>
@@ -48,7 +48,7 @@ const login = () => {
             </Link>
           </form>
         </div>
-        {/* Login footer */}
+        {/*-----Login footer-----*/}
         <div className="footer-login">
           <footer>
 
