@@ -24,42 +24,42 @@ const Supply = () => {
             <div className='icon4'><FaSearch /></div>
           </div>
           <div className='supply-content2'>
-          <SuppProduct1/>
+            <SuppProduct1 />
           </div>
           {/*-----Product 2-----*/}
           <div className='supply-content2'>
-          <SuppProduct2/>
+            <SuppProduct2 />
           </div>
           {/*-----Product 3-----*/}
           <div className='supply-content2'>
-            <SuppProduct3/>
+            <SuppProduct3 />
           </div>
           {/*-----Product 4-----*/}
           <div className='supply-content2'>
-          <SuppProduct4/>
+            <SuppProduct4 />
           </div>
           {/*-----Product 5-----*/}
           <div className='supply-content2'>
-          <SuppProduct5/>
+            <SuppProduct5 />
           </div>
           {/*-----Product 6-----*/}
           <div className='supply-content2'>
-          <SuppProduct6/>
+            <SuppProduct6 />
           </div>
           {/*-----Product 7-----*/}
           <div className='supply-content2'>
-          <SuppProduct7/>
+            <SuppProduct7 />
           </div>
         </div>
         <div className='basket-container'>
-        <div className='basket-content'>
-        <div className='icon5'><FaShoppingBasket/></div>
-        <div>
-        <h1><span>ADD TO</span><br/><span>BASKET</span></h1>
+          <div className='basket-content'>
+            <div className='icon5'><FaShoppingBasket /></div>
+            <div>
+              <h1><span>ADD TO</span><br /><span>BASKET</span></h1>
+            </div>
+          </div>
         </div>
-        </div>
-        </div>
-        <Contact/>
+        <Contact />
       </div>
     </>
   )

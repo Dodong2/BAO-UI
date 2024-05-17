@@ -3,7 +3,7 @@ import { RiSubtractFill } from "react-icons/ri";
 import { IoMdAdd } from "react-icons/io";
 // import supply nproducts pic
 import LspuLogo1 from '/src/components/logo/LSPUlogo.png'
-import {BooksData} from './BooksData'
+import { BooksData } from './BooksData'
 
 
 export default function App() {
@@ -21,7 +21,7 @@ export default function App() {
 
   return (
     <>
-    <div className='product-list'>
+      <div className='product-list'>
         {/*-----Product 1-----*/}
         {BooksData.map((book, index) => (
           <div key={index} className='merch-card'>
@@ -37,7 +37,7 @@ export default function App() {
             </div>
           </div>
         ))}
-        </div>
+      </div>
     </>
   );
 }
