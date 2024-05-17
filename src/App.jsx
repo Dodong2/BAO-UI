@@ -5,6 +5,7 @@ import Home from './components/pages/Home'
 import About from './components/pages/About'
 import  Supply from './components/pages/Supply'
 import Other from './components/pages/Others'
+import Merchandise from './components/pages/Merchandise'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -17,6 +18,7 @@ function App() {
       <Route path='/About' element={<About/>}/>
       <Route path='/Supply' element={<Supply/>}/>
       <Route path="/Other" element={<Other/>}/>
+      <Route path="/Merchandise" element={<Merchandise/>}/>
     </Routes>
    </BrowserRouter>
   )
