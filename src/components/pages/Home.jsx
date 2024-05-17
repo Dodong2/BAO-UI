@@ -98,7 +98,7 @@ import 'swiper/css/scrollbar'; const Home = () => {
                 <h1>OTHER PRODUCTS</h1>
               </div><br />
               <div className='content'>
-              <Link to="">
+              <Link to="/Other">
                 <button>GO TO OTHERS &gt; </button>
                 </Link>
               </div>

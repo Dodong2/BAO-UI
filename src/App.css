@@ -1013,8 +1013,93 @@ a:-webkit-any-link {
   font-size: 5em;
   font-weight: 900;
 }
+/*--------Other Products css---------*/
+.other-container {
+  margin-top: 34px;
+  padding-bottom: 25px;
+}
+.other-header h1 {
+  font-family: "Poppins-ExtraBold";
+  font-size: 5em;
+  text-align: center;
+}
+/*--------Similarities css---------*/
+.other-action1 h1,.other-action2 h1, .other-action3 h1, .other-action4 h1 {
+  position: absolute;
+  top: 5%;
+  left: 12%;
+  font-family: "Poppins-ExtraBold";
+  font-style: italic;
+  -webkit-text-stroke: 3px var(--font-color);
+}
 
+.other-action1 button, .other-action2 button, .other-action3 button, .other-action4 button {
+  position: absolute;
+  top: 70%;
+  left: 53%;
+  border: 5px solid var(--white);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  color: var(--white);
+  gap: 5px;
+  font-family: 'Poppins-ExtraBold';
+  font-size: 3em;
+  background-color: rgba(58, 58, 58, 0.463);
+}
+.other-contents1  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.other-contents1 img {
+  width: 80%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.other-contents1 {
+  position: relative;
+}
 
+/*-----Other service 1-----*/
+.other-serv1 {
+  background: var(--blue-nav);
+  padding: 25px;
+}
+.other-action1 h1 {
+  font-size: 3em;
+  color: var(--white);
+}
+/*-----Other service 2-----*/
+.other-serv2 {
+  background: var(--services-color-text2);
+  padding: 25px;
+}
+.other-action2 h1 {
+  font-size: 2.8em;
+  color: var(--white);
+}
+/*-----Other service 3-----*/
+.other-serv3 {
+  background: var(--yellow-nav);
+  padding: 25px;
+}
+.other-action3 h1 {
+  font-size: 2.3em;
+  color: var(--white);
+}
+/*-----Other service 4-----*/
+.other-serv4 {
+  background: var(--services-color-text4);
+  padding: 25px;
+}
+.other-action4 h1 {
+  font-size: 2.5em;
+  color: var(--white);
+}
 
 
 
@@ -1412,6 +1497,49 @@ a:-webkit-any-link {
 .basket-content h1 span:nth-child(3){
   font-size: 1.3em;
 }
+/*--------Other Products css---------*/
+.other-container {
+  margin-top: 20px;
+  padding-bottom: 25px;
+}
+.other-header h1 {
+  font-size: 3em;
+}
+/*--------Similarities css---------*/
+.other-action1 h1,.other-action2 h1, .other-action3 h1, .other-action4 h1 {
+  position: absolute;
+  top: 5%;
+  left: 3%;
+  font-family: "Poppins-ExtraBold";
+  font-style: italic;
+  -webkit-text-stroke: 1.2px var(--font-color);
+  font-size: 1.1em;
+  color: var(--white);
+}
+
+.other-action1 button, .other-action2 button, .other-action3 button, .other-action4 button {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  color: var(--white);
+  font-size: 1em;
+
+}
+.other-serv1, .other-serv2, .other-serv3, .other-serv4 {
+  padding: 10px;
+}
+
+.other-contents1 img {
+  width: 500px;
+  height: 200px;
+  object-fit: cover;
+}
+.other-contents1 {
+  position: relative;
+}
+
 }
 
 /* For Tablets */
