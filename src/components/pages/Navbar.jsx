@@ -20,7 +20,7 @@ import { IoMdAlert } from "react-icons/io";const Navbar = () => {
                         <ul>
                             <Link to='/Home'><li className='layer1 custom-hover'><span>HOME</span></li></Link>
                             <Link to='/About'><li className='layer2 custom-hover'><span>ABOUT</span></li></Link>
-                            <Link to='/'><li className='layer3 custom-hover'><span>CONTACTS</span></li></Link>
+                            <Link to='/Contact'><li className='layer3 custom-hover'><span>CONTACTS</span></li></Link>
                             <Link to='/Cart'><li className='layer4 custom-hover'><span>BASKET</span></li></Link>
                         </ul>
                         {/* Responsive phone navbar */}
@@ -53,7 +53,7 @@ import { IoMdAlert } from "react-icons/io";const Navbar = () => {
                             <nav className={isOpen ? "" : "notxt"}>
                                 <Link to="/Home" className='layer1'><button><IoMdHome /><span>HOME</span></button><hr/></Link>
                                 <Link to="/About" className='layer2'><button ><IoMdAlert/> <span>ABOUT</span></button></Link><hr/>
-                                <Link to="/" className='layer3'><button><BsFillTelephoneFill/> <span>CONTACTS</span></button></Link><hr/>
+                                <Link to="/Contact" className='layer3'><button><BsFillTelephoneFill/> <span>CONTACTS</span></button></Link><hr/>
                                 <Link to="/Cart" className='layer4'><button><FaShoppingBasket/><span>BASKET</span></button></Link>
                             </nav>
                         </div>

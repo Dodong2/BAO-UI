@@ -7,8 +7,10 @@ import  Supply from './components/pages/Supply'
 import Other from './components/pages/Others'
 import Merchandise from './components/pages/Merchandise'
 import Cart from './components/pages/Cart'
+import Receipt from './components/pages/Receipt'
+import Contact from './components/pages/Contact';
 function App() {
-  // const [count, setCount] = useState(0)
+
 
   return (
    <BrowserRouter>
@@ -16,8 +18,10 @@ function App() {
       <Route path='/' element={<Login/>}/>
       <Route path='/Home' element={<Home/>}/>
       <Route path='/About' element={<About/>}/>
+      <Route path='/Contact' element={<Contact/>}/>
       <Route path='/Cart' element={<Cart/>}/>
       <Route path='/Supply' element={<Supply/>}/>
+      <Route path='/Receipt' element={<Receipt/>}/>
       <Route path="/Other" element={<Other/>}/>
       <Route path="/Merchandise" element={<Merchandise/>}/>
     </Routes>

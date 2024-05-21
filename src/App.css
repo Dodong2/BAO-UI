@@ -1537,7 +1537,68 @@ a:-webkit-any-link {
   background: var(--white);
   transition: all ease 0.3s;
 }
+/*--------receipt css---------*/
+.receipt-container {
+  margin-top: 34px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.receipt1 {
+  /* border: 1px solid blue; */
+  border-radius: 20px;
+  background: var(--cart-bgcolor);
+  padding: 30px;
+  padding-right: 200px;
+  padding-bottom: 100px;
+}
+.receipt1 h1 {
+  font-family: "Poppins-light";
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 2em;
+}
+.receipt2 .receipt-title {
+  background: var(--cart-bgcolor);
+  padding: 10px;
+  font-family: "Poppins-light";
+  font-size: 3em;
+  font-weight: 600;
+  padding-right: 200px;
+  border-radius: 20px;
+}
+.receipt2 .receipt-table {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: var(--cart-bgcolor);
+  padding: 20px;
+  border-radius: 20px;
+}
+.receipt2 .receipt-table h1 {
+  text-align: left;
+  font-size: 1em;
+  font-family: "Poppins-Bold";
+}
+.receipt2 .receipt-table h2 {
+  text-align: right;
+  font-size: 1em;
+  font-family: "Poppins-Bold";
+  padding-right: 100px;
 
+}
+.receipt2 .receipt-table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 2px solid var(--black);
+  padding: 8px;
+  text-align: left;
+  text-align: center;
+}
 
 
 
@@ -2190,6 +2251,68 @@ a:-webkit-any-link {
 }
 .selection3 button {
   font-size: 1.3em;
+}
+/*--------receipt css---------*/
+.receipt-container {
+  margin-top: 0px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.receipt1 {
+  border-radius: 20px;
+  background: var(--cart-bgcolor);
+  padding: 30px;
+  padding-right: 200px;
+  padding-bottom: 100px;
+}
+.receipt1 h1 {
+  font-family: "Poppins-light";
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 2em;
+}
+.receipt2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.receipt2 .receipt-title {
+  padding: 10px;
+  font-size:1.5em;
+}
+.receipt2 .receipt-table {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: var(--cart-bgcolor);
+  padding: 20px;
+  border-radius: 20px;
+}
+.receipt2 .receipt-table h1 {
+  text-align: left;
+  font-size: 1em;
+  font-family: "Poppins-Bold";
+}
+.receipt2 .receipt-table h2 {
+  text-align: right;
+  font-size: 1em;
+  font-family: "Poppins-Bold";
+  padding-right: 100px;
+
+}
+.receipt2 .receipt-table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 2px solid var(--black);
+  padding: 8px;
+  text-align: left;
+  text-align: center;
 }
 }
 

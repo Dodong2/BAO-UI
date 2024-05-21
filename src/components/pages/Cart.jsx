@@ -25,7 +25,7 @@ const Cart = () => {
     <>
       <Navbar/>
       <div className="main-container">
-      {/*-----Home container-----*/}
+      {/*-----Cart container-----*/}
       <div className='cart-container'>
       <div className='items-selection'>
       <div className='items-selection1'>
@@ -48,13 +48,13 @@ const Cart = () => {
       <div className='items-selection3'>
       <div className='selection3'>
       <h1>Total: <span>P 510.00</span></h1>
-      <Link rel='/'>
+      <Link to='/Receipt'>
       <button>Check out</button>
       </Link>
       </div>
       </div>
       </div>
-      {/*-----Login footer-----*/}
+      {/*-----Cart footer-----*/}
       <div className="cart-footer">
       <footer>
         <div className="loc">
