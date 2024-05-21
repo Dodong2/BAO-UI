@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import { useEffect } from 'react';
 import Login from './components/pages/Login'
 import './App.css'
 import Home from './components/pages/Home'
@@ -10,7 +11,9 @@ import Cart from './components/pages/Cart'
 import Receipt from './components/pages/Receipt'
 import Contact from './components/pages/Contact';
 function App() {
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
    <BrowserRouter>

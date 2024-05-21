@@ -1,8 +1,12 @@
+import { useEffect } from "react";
 import Navbar from "./Navbar";
 import Contact from "./Contact";
 import LspuLogo1 from "../logo/LSPUlogo.png";
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Navbar />

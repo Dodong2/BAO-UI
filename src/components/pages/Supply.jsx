@@ -1,4 +1,5 @@
 import Navbar from './Navbar'
+import { useEffect } from 'react';
 import { FaSearch } from "react-icons/fa";
 import { FaShoppingBasket } from "react-icons/fa";
 import SuppProduct1 from './SupplyProducts/SuppProduct1'
@@ -10,7 +11,9 @@ import SuppProduct6 from '../pages/SupplyProducts/SuppProduct6'
 import SuppProduct7 from '../pages/SupplyProducts/SuppProduct7'
 import Contact from './Contact';
 const Supply = () => {
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>

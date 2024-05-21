@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'
 import Navbar from './Navbar'
 import { FaLocationDot } from "react-icons/fa6";
@@ -10,6 +10,10 @@ import { IoMdAdd } from "react-icons/io";
 import { FaTrashAlt } from "react-icons/fa";
 import testImage from '../image/supp1.png'
 const Cart = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
     const [count, setcount] = useState(0);
       //add value
   const IncrementValue = () => {

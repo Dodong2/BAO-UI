@@ -1,4 +1,5 @@
 import Navbar from "./Navbar"
+import { useEffect } from "react";
 import Contact from './Contact'
 import { FaShoppingBasket } from "react-icons/fa";
 import otherProd1 from '../image/otherProd1.jpg'
@@ -7,6 +8,9 @@ import otherProd3 from '../image/otherProd3.jpg'
 import otherProd4 from '../image/otherProd4.jpg'
 
 const Others = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
     <Navbar/>

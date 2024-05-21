@@ -1,4 +1,5 @@
 import Navbar from './Navbar'
+import { useEffect } from 'react';
 import { FaShoppingBasket } from "react-icons/fa";
 import { MdSwipe } from "react-icons/md";
 import { FaRegCheckCircle } from "react-icons/fa";
@@ -6,7 +7,9 @@ import Contact from './Contact';
 import BooksPro from'./BookItems/BooksProducts'
 import Shirts from './University & Department Shirts/Shirts'
 const Supply = () => {
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
