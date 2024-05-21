@@ -40,7 +40,7 @@ const login = () => {
               <h1>Enter Password</h1>
               <div className="password-container">
                 <input type={showpass ? 'text' : 'password'} id="password" required />
-                <div className='icon3' onClick={tggleicons}>{changeicon ? (<FaEyeSlash onClick={tgglePass} />) : (<FaEye onClick={tgglePass} />)}</div>
+                <div className='icon3' onClick={tggleicons}>{changeicon ? (<FaEye onClick={tgglePass} />) : (<FaEyeSlash onClick={tgglePass} />)}</div>
               </div>
             </div>
             <Link to='/Home'>
