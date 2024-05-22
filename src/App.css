@@ -67,6 +67,7 @@ body {
   top: 0;
   width: 100%;
   z-index: 999;
+  box-shadow: 1px 0px 5px 1px var(--black);
 }
 
 .left {
@@ -426,7 +427,11 @@ a:-webkit-any-link {
   border-radius: 50px;
   --swiper-navigation-size: 44px;
   --swiper-theme-color: #ff6f00;
+  transition: all ease .2s;
 }
+/* .swiper-container:hover {
+  box-shadow: 1px 0px 10px 5px var(--black);
+} */
 
 .swiper-container .element1 {
   display: flex;
@@ -488,6 +493,13 @@ a:-webkit-any-link {
   display: flex;
   justify-content: space-between;
   position: relative;
+  transition: all ease .2s;
+}
+.services .serv1:hover,
+.services .serv2:hover, 
+.services .serv3:hover, 
+.services .serv4:hover {
+  box-shadow: 1px 0px 10px 5px var(--black);
 }
 
 .services .serv1 {
@@ -516,7 +528,7 @@ a:-webkit-any-link {
   font-size: 40px;
   font-weight: 600;
   color: var(--white);
-  -webkit-text-stroke: 4px var(--font-color);
+  -webkit-text-stroke: 2px var(--font-color);
 }
 
 .serv1 .content h1 {
@@ -557,6 +569,15 @@ a:-webkit-any-link {
   font-style: italic;
   padding: 15px;
   border-radius: 50px;
+  transition: all ease .3s;
+}
+.serv1 .content button:hover,
+.serv2 .content button:hover,
+.serv3 .content button:hover,
+.serv4 .content button:hover {
+  box-shadow: 1px 0px 5px 5px var(--orage);
+  color: var(--orage);
+
 }
 
 .serv1 .content button {
@@ -986,12 +1007,16 @@ a:-webkit-any-link {
   justify-content: center;
   flex-direction: column;
   border-radius: 20px;
+  transition: all ease .2s;
 }
+.supp-card:hover {
+  box-shadow: 1px 0px 5px 5px var(--black);
+}
+
 
 .card-contents {
   position: relative;
 }
-
 .card-contents .img1 {
   position: absolute;
   top: 5%;
@@ -1063,6 +1088,12 @@ a:-webkit-any-link {
   justify-content: space-around;
   align-items: center;
   border-radius: 30px;
+  transition: all ease .3s;
+}
+.basket-content:hover {
+  background: var(--white);
+  color: var(--font-color);
+  box-shadow: 1px 0px 5px 5px var(--black);
 }
 
 .basket-content .icon5 {
@@ -1128,6 +1159,15 @@ a:-webkit-any-link {
   font-family: "Poppins-ExtraBold";
   font-size: 3em;
   background-color: rgba(58, 58, 58, 0.463);
+  transition: all ease .2s;
+}
+.other-action1 button:hover,
+.other-action2 button:hover,
+.other-action3 button:hover,
+.other-action4 button:hover {
+  border: 5px solid var(--font-color);
+  background: var(--white);
+  color: var(--font-color);
 }
 
 .other-contents1 {
@@ -1141,6 +1181,10 @@ a:-webkit-any-link {
   height: 400px;
   object-fit: cover;
   border-radius: 20px;
+  transition: all ease .2s;
+}
+.other-contents1 img:hover {
+  box-shadow: 1px 0px 1px 5px var(--white);
 }
 
 .other-contents1 {
@@ -1199,7 +1243,12 @@ a:-webkit-any-link {
   flex-wrap: wrap;
   gap: 50px;
 }
-
+.merch-card {
+  transition: all ease .2s;
+}
+.merch-card:hover {
+  box-shadow: 1px 0px 5px 5px var(--black);
+}
 .merchandise-container {
   margin-top: 34px;
   padding: 25px;
@@ -1236,6 +1285,11 @@ a:-webkit-any-link {
   font-family: "Poppins-Bold";
   white-space: nowrap;
   letter-spacing: 10px;
+  transition: all ease .3s;
+}
+.merch-btn1:hover {
+  color: var(--white);
+ background: var(--orage);
 }
 
 .merch-btn2 {
@@ -1248,6 +1302,12 @@ a:-webkit-any-link {
   justify-content: space-around;
   align-items: center;
   border-radius: 10px;
+  transition: all ease .3s;
+
+}
+.merch-btn2:hover {
+  color: var(--font-color);
+  background: var(--white);
 }
 
 .tshirt1 {
@@ -1475,7 +1535,7 @@ a:-webkit-any-link {
 }
 /* Footer cart */
 .cart-footer footer {
-  margin-top: 110px;
+  margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -1491,6 +1551,7 @@ a:-webkit-any-link {
   align-items: center;
   justify-content: center;
   gap: 5px;
+  padding-bottom: 20px;
 }
 
 .cart-footer footer h1 {
@@ -1546,12 +1607,26 @@ a:-webkit-any-link {
   gap: 20px;
 }
 .receipt1 {
-  /* border: 1px solid blue; */
   border-radius: 20px;
   background: var(--cart-bgcolor);
   padding: 30px;
-  padding-right: 200px;
   padding-bottom: 100px;
+}
+.receipt1 div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.receipt1 input {
+  text-align: left;
+  padding: 3px;
+  background: var(--cart-bgcolor);
+  font-family: "Poppins-light";
+  font-size: 1em;
+  font-weight: 600;
+  padding-right: 100px;
 }
 .receipt1 h1 {
   font-family: "Poppins-light";
@@ -1599,8 +1674,54 @@ th, td {
   text-align: left;
   text-align: center;
 }
-
-
+.receipt-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.receipt-action button {
+  font-family: "Poppins-ExtraBold";
+  font-size: 2em;
+  color: var(--white);
+  padding: 10px;
+  background: var(--orage);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  transition: all ease .3s ;
+}
+.receipt-action button:hover {
+  color: var(--font-color);
+  background: var(--white);
+}
+/*--------End Page css---------*/
+.end-container {
+  margin-top: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+}
+.end-element {
+  background: var(--cart-bgcolor);
+  text-align: center;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 25px;
+}
+.end-element img {
+  height: 200px;
+  width: 200px;
+}
+.end-element h1, .end-element h1:nth-child(1) {
+  font-family: "Poppins-Bold";
+  font-size: 2em;
+}
 
 
 
@@ -2066,9 +2187,13 @@ th, td {
     object-fit: cover;
   }
 
+
   .other-contents1 {
     position: relative;
+    transition: all ease .2s;
   }
+
+
 
   /*-----Mechandise page css-----*/
   .product-list {
@@ -2264,14 +2389,23 @@ th, td {
   border-radius: 20px;
   background: var(--cart-bgcolor);
   padding: 30px;
-  padding-right: 200px;
   padding-bottom: 100px;
 }
+.receipt1 div {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 1px;
+}
+.receipt1 input {
+  text-align: left;
+  padding: 1px;
+}
+
 .receipt1 h1 {
-  font-family: "Poppins-light";
   font-size: 1em;
-  font-weight: 600;
   line-height: 2em;
+  white-space: nowrap;
 }
 .receipt2 {
   display: flex;
@@ -2292,7 +2426,7 @@ th, td {
   border-radius: 20px;
 }
 .receipt2 .receipt-table h1 {
-  text-align: left;
+  text-align: center;
   font-size: 1em;
   font-family: "Poppins-Bold";
 }
@@ -2314,6 +2448,22 @@ th, td {
   text-align: left;
   text-align: center;
 }
+/*--------End Page css---------*/
+.end-container {
+  padding: 20px;
+}
+.end-element {
+  padding: 20px;
+}
+.end-element img {
+  height: 150px;
+  width: 150px;
+}
+.end-element h1, .end-element h1:nth-child(1) {
+  font-family: "Poppins-Bold";
+  font-size: 1.4em;
+}
+
 }
 
 /* For Tablets */

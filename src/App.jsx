@@ -10,6 +10,7 @@ import Merchandise from './components/pages/Merchandise'
 import Cart from './components/pages/Cart'
 import Receipt from './components/pages/Receipt'
 import Contact from './components/pages/Contact';
+import EndPage from './components/pages/EndPage';
 function App() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -26,6 +27,7 @@ function App() {
       <Route path='/Supply' element={<Supply/>}/>
       <Route path='/Receipt' element={<Receipt/>}/>
       <Route path="/Other" element={<Other/>}/>
+      <Route path="/EndPage" element={<EndPage/>}/>
       <Route path="/Merchandise" element={<Merchandise/>}/>
     </Routes>
    </BrowserRouter>

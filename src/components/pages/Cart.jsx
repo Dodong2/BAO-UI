@@ -1,10 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'
 import Navbar from './Navbar'
-import { FaLocationDot } from "react-icons/fa6";
-import { FaPhoneAlt } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
-import { TbMailFilled } from "react-icons/tb";
 import { RiSubtractFill } from "react-icons/ri";
 import { IoMdAdd } from "react-icons/io";
 import { FaTrashAlt } from "react-icons/fa";
@@ -58,28 +54,6 @@ const Cart = () => {
       </div>
       </div>
       </div>
-      {/*-----Cart footer-----*/}
-      <div className="cart-footer">
-      <footer>
-        <div className="loc">
-          <FaLocationDot className="icons" />
-          <h1>Find Us at: 56PJ+PP9, Los Baños, 4030 Laguna</h1>
-        </div>
-
-        <div className="cont">
-          <FaPhoneAlt className="icons" />
-          <h1>Contact Us: 0999-993-7400</h1>
-        </div>
-
-        <div className="soc">
-          <h1>Socials:</h1>
-          <a href="https://web.facebook.com/groups/414182603901608/"><FaFacebook className="icons" /></a>
-          <TbMailFilled className="icons" />
-        </div>
-
-      </footer>
-    </div>
-
       </div>
     </>
   )
