@@ -6,13 +6,14 @@ import otherProd1 from '../image/otherProd1.jpg'
 import otherProd2 from '../image/otherProd2.jpg'
 import otherProd3 from '../image/otherProd3.jpg'
 import otherProd4 from '../image/otherProd4.jpg'
-
+import Load from './Loading'
 const Others = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
     <>
+    <Load/>
     <Navbar/>
     <div className="main-container">
     {/*-----Other Page-----*/}

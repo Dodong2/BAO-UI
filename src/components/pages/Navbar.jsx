@@ -20,7 +20,7 @@ import { IoMdAlert } from "react-icons/io";const Navbar = () => {
                         <ul>
                             <Link to='/Home'><li className='layer1 custom-hover'><span>HOME</span></li></Link>
                             <Link to='/About'><li className='layer2 custom-hover'><span>ABOUT</span></li></Link>
-                            <Link to='/Contact'><li className='layer3 custom-hover'><span>CONTACTS</span></li></Link>
+                            <a href='#contacts'><li className='layer3 custom-hover'><span>CONTACTS</span></li></a>
                             <Link to='/Cart'><li className='layer4 custom-hover'><span>BASKET</span></li></Link>
                         </ul>
                         {/* Responsive phone navbar */}

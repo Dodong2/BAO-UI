@@ -7,6 +7,7 @@ import 'swiper/css/pagination';
 import LspuLogo1 from '../logo/LSPUlogo.png'
 import Contact from './Contact'
 import { Link } from 'react-router-dom'
+import Load from './Loading'
 
 
 
@@ -14,6 +15,7 @@ import { Link } from 'react-router-dom'
 import 'swiper/css/scrollbar'; const Home = () => {
   return (
     <>
+    <Load/>
       <Navbar />
       <div className="main-container">
         {/*-----Home container-----*/}
@@ -105,7 +107,9 @@ import 'swiper/css/scrollbar'; const Home = () => {
             </div><br/><br/>
           </div>
         </div>
+        <section id="contacts">
         <Contact />
+        </section>
       </div>
     </>
   )

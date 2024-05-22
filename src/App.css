@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 /* Color lists */
@@ -66,8 +67,9 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 200;
   box-shadow: 1px 0px 5px 1px var(--black);
+  transition: all 0.5s;
 }
 
 .left {
@@ -610,6 +612,7 @@ a:-webkit-any-link {
 .home-footer {
   background: var(--white);
   padding: 20px;
+  margin-top: 34px;
 }
 
 .footer-layer1 h1 {
@@ -1717,18 +1720,23 @@ th, td {
 .end-element img {
   height: 200px;
   width: 200px;
+  background: var(--white);
+  border-radius: 50%;
 }
 .end-element h1, .end-element h1:nth-child(1) {
   font-family: "Poppins-Bold";
   font-size: 2em;
 }
+.visible {
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
 
-
-
-
-
-
-
+.hidden {
+  opacity: 0;
+  z-index: -100;
+  transition: opacity 1s ease-out;
+}
 
 
 

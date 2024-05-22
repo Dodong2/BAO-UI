@@ -10,13 +10,16 @@ import SuppProduct5 from '../pages/SupplyProducts/SuppProduct5'
 import SuppProduct6 from '../pages/SupplyProducts/SuppProduct6'
 import SuppProduct7 from '../pages/SupplyProducts/SuppProduct7'
 import Contact from './Contact';
+import Load from './Loading'
 const Supply = () => {
+  //for top page view
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <>
+    <Load/>
       <Navbar />
       <div className="main-container">
         {/*-----Supplies container-----*/}

@@ -10,6 +10,7 @@ import { FaEyeSlash } from "react-icons/fa";
 import LspuLogo1 from '../logo/LSPUlogo.png'
 import { useState } from "react";
 import { Link } from 'react-router-dom'
+import Load from './Loading'
 const login = () => {
 
   const [showpass, setshowpass] = useState(false)
@@ -23,6 +24,7 @@ const login = () => {
 
   return (
     <>
+    <Load/>
       <div className="main-container">
         {/*-----Login page-----*/}
         <div className="login-container">

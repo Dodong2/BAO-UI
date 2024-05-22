@@ -1,7 +1,9 @@
-
+import Navbar from "./Navbar"
 const Contact = () => {
   return (
     <>
+    <Navbar/>
+    <section id="contacts">
       {/*-----Contact Footer-----*/}
       <div className='home-footer'>
       <div className='footer-layer1'>
@@ -23,6 +25,7 @@ const Contact = () => {
       </div>
       </div>
       </div>
+      </section>
     </>
   )
 }

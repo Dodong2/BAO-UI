@@ -2,13 +2,14 @@ import { useEffect } from "react";
 import Navbar from "./Navbar";
 import Contact from "./Contact";
 import LspuLogo1 from "../logo/LSPUlogo.png";
-
+import Load from './Loading'
 const About = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
     <>
+    <Load/>
       <Navbar />
       <div className="main-container">
         {/*About page*/}
