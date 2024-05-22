@@ -1,4 +1,5 @@
 import Navbar from './Navbar'
+import { useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
@@ -8,11 +9,18 @@ import LspuLogo1 from '../logo/LSPUlogo.png'
 import Contact from './Contact'
 import { Link } from 'react-router-dom'
 import Load from './Loading'
+import 'swiper/css/scrollbar'; 
+//AOS
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+const Home = () => {
+  //Aos
+  useEffect(() => {
+    AOS.init( {
+      duration: 1200
+  })
+  }, [])
 
-
-
-
-import 'swiper/css/scrollbar'; const Home = () => {
   return (
     <>
     <Load/>
@@ -20,7 +28,7 @@ import 'swiper/css/scrollbar'; const Home = () => {
       <div className="main-container">
         {/*-----Home container-----*/}
         <div className='home-container'>
-          <div className='swiper-container'>
+          <div className='swiper-container' data-aos="flip-left" data-aos-duration="1000">
             <Swiper
               slidesPerView={1}
               spaceBetween={30}
@@ -63,7 +71,7 @@ import 'swiper/css/scrollbar'; const Home = () => {
           {/*-----Services-----*/}
           <div className='services'>
           {/*-----Service 1-----*/}
-            <div className='serv1'>
+            <div className='serv1' data-aos="fade-right" data-aos-duration="3000">
               <div className='content'>
                 <h1>SCHOOL & OFFICE SUPPLIES</h1>
               </div><br />
@@ -74,7 +82,7 @@ import 'swiper/css/scrollbar'; const Home = () => {
               </div>
             </div><br/><br/>
             {/*-----Service 2-----*/}
-            <div className='serv2'>
+            <div className='serv2' data-aos="fade-right" data-aos-duration="2800">
             <div className='content'>
                 <h1>OFFICIAL UNIVERSITY MERCHENDISE</h1>
               </div><br />
@@ -84,7 +92,7 @@ import 'swiper/css/scrollbar'; const Home = () => {
                 </Link>
               </div></div><br/><br/>
               {/*-----Service 3-----*/}
-            <div className='serv3'>
+            <div className='serv3' data-aos="fade-right" data-aos-duration="2800">
             <div className='content'>
                 <h1>SERVICES</h1>
               </div><br />
@@ -95,7 +103,7 @@ import 'swiper/css/scrollbar'; const Home = () => {
               </div>
             </div><br/><br/>
             {/*-----Service 4-----*/}
-            <div className='serv4'>
+            <div className='serv4' data-aos="fade-right" data-aos-duration="2800">
             <div className='content'>
                 <h1>OTHER PRODUCTS</h1>
               </div><br />
@@ -107,9 +115,7 @@ import 'swiper/css/scrollbar'; const Home = () => {
             </div><br/><br/>
           </div>
         </div>
-        <section id="contacts">
         <Contact />
-        </section>
       </div>
     </>
   )

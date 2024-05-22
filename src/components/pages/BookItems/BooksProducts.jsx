@@ -1,12 +1,22 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { RiSubtractFill } from "react-icons/ri";
 import { IoMdAdd } from "react-icons/io";
 // import supply nproducts pic
 import LspuLogo1 from '/src/components/logo/LSPUlogo.png'
 import { BooksData } from './BooksData'
+//AOS
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 
 export default function App() {
+  //Aos
+  useEffect(() => {
+    AOS.init( {
+      duration: 1200
+  })
+  }, [])
+
   const [count, setcount] = useState(0);
   //add value
   const IncrementValue = () => {
@@ -21,7 +31,7 @@ export default function App() {
 
   return (
     <>
-      <div className='product-list'>
+      <div className='product-list' data-aos="fade-up-right" data-aos-duration="3000">
         {/*-----Product 1-----*/}
         {BooksData.map((book, index) => (
           <div key={index} className='merch-card'>

@@ -7,7 +7,18 @@ import otherProd2 from '../image/otherProd2.jpg'
 import otherProd3 from '../image/otherProd3.jpg'
 import otherProd4 from '../image/otherProd4.jpg'
 import Load from './Loading'
+//AOS
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 const Others = () => {
+     //Aos
+     useEffect(() => {
+      AOS.init( {
+        duration: 1200
+    })
+    }, [])
+  //for top page view
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -25,7 +36,7 @@ const Others = () => {
     <img src={otherProd1}/>
     <div className="other-action1">
     <h1>Tilanggit - P100</h1>
-    <button><FaShoppingBasket/> ADD TO BASKET</button>
+    <button data-aos="flip-left"><FaShoppingBasket/> ADD TO BASKET</button>
     </div>
     </div>
     </div>
@@ -35,7 +46,7 @@ const Others = () => {
         <img src={otherProd2}/>
         <div className="other-action2">
         <h1>Bottled Water - P10 (350ml), P15 (500ml)</h1>
-        <button><FaShoppingBasket/> ADD TO BASKET</button>
+        <button data-aos="flip-left"><FaShoppingBasket/> ADD TO BASKET</button>
         </div>
         </div>
         </div>
@@ -45,7 +56,7 @@ const Others = () => {
     <img src={otherProd3}/>
     <div className="other-action3">
     <h1>Cream Banana Cake & Cream Ube Cake - P100</h1>
-    <button><FaShoppingBasket/> ADD TO BASKET</button>
+    <button data-aos="flip-left"><FaShoppingBasket/> ADD TO BASKET</button>
     </div>
     </div>
     </div>
@@ -55,7 +66,7 @@ const Others = () => {
     <img src={otherProd4}/>
     <div className="other-action4">
     <h1>Home Made Kimchi - P100(small), P200(Big)</h1>
-    <button><FaShoppingBasket/> ADD TO BASKET</button>
+    <button data-aos="flip-left"><FaShoppingBasket/> ADD TO BASKET</button>
     </div>
     </div>
     </div>

@@ -1,9 +1,19 @@
 import Navbar from "./Navbar"
+import { useEffect } from "react"
+//AOS
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 const Contact = () => {
+    //Aos
+    useEffect(() => {
+      AOS.init( {
+        duration: 1200
+    })
+    }, [])
   return (
     <>
     <Navbar/>
-    <section id="contacts">
+    <section id="contacts" data-aos="fade-up">
       {/*-----Contact Footer-----*/}
       <div className='home-footer'>
       <div className='footer-layer1'>

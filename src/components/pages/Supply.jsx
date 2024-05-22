@@ -11,7 +11,17 @@ import SuppProduct6 from '../pages/SupplyProducts/SuppProduct6'
 import SuppProduct7 from '../pages/SupplyProducts/SuppProduct7'
 import Contact from './Contact';
 import Load from './Loading'
+//AOS
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 const Supply = () => {
+    //Aos
+    useEffect(() => {
+      AOS.init( {
+        duration: 1200
+    })
+    }, [])
   //for top page view
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -29,35 +39,35 @@ const Supply = () => {
             <input type='text' id='search' placeholder='search item' />
             <div className='icon4'><FaSearch /></div>
           </div>
-          <div className='supply-content2'>
+          <div className='supply-content2' data-aos="fade-up-right" data-aos-duration="3000">
             <SuppProduct1 />
           </div>
           {/*-----Product 2-----*/}
-          <div className='supply-content2'>
+          <div className='supply-content2' data-aos="fade-up-right">
             <SuppProduct2 />
           </div>
           {/*-----Product 3-----*/}
-          <div className='supply-content2'>
+          <div className='supply-content2' data-aos="fade-up-right">
             <SuppProduct3 />
           </div>
           {/*-----Product 4-----*/}
-          <div className='supply-content2'>
+          <div className='supply-content2' data-aos="fade-up-right">
             <SuppProduct4 />
           </div>
           {/*-----Product 5-----*/}
-          <div className='supply-content2'>
+          <div className='supply-content2' data-aos="fade-up-right">
             <SuppProduct5 />
           </div>
           {/*-----Product 6-----*/}
-          <div className='supply-content2'>
+          <div className='supply-content2' data-aos="fade-up-right">
             <SuppProduct6 />
           </div>
           {/*-----Product 7-----*/}
-          <div className='supply-content2'>
+          <div className='supply-content2' data-aos="fade-up-right">
             <SuppProduct7 />
           </div>
         </div>
-        <div className='basket-container'>
+        <div className='basket-container' data-aos="fade-up">
           <div className='basket-content'>
             <div className='icon5'><FaShoppingBasket /></div>
             <div>
@@ -65,7 +75,7 @@ const Supply = () => {
             </div>
           </div>
         </div>
-        <Contact />
+        <Contact data-aos="fade-up"/>
       </div>
     </>
   )

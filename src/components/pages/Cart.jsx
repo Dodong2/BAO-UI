@@ -6,7 +6,18 @@ import { IoMdAdd } from "react-icons/io";
 import { FaTrashAlt } from "react-icons/fa";
 import testImage from '../image/supp1.png'
 import Load from './Loading'
+//AOS
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 const Cart = () => {
+    //Aos
+    useEffect(() => {
+      AOS.init( {
+        duration: 1200
+    })
+    }, [])
+  //for top page view
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -29,7 +40,7 @@ const Cart = () => {
       <div className="main-container">
         {/*-----Cart container-----*/}
         <div className='cart-container'>
-          <div className='items-selection'>
+          <div className='items-selection' data-aos="fade-up" data-aos-duration="2300">
             <div className='items-selection1'>
               <div className='act1'><input type='checkbox' id="act1" /></div>
               <div className='act2'><img src={testImage} /></div>
@@ -47,7 +58,7 @@ const Cart = () => {
               </div>
             </div>
           </div>
-          <div className='items-selection3'>
+          <div className='items-selection3' data-aos="fade-right" data-aos-duration="2600">
             <div className='selection3'>
               <h1>Total: <span>P 510.00</span></h1>
               <Link to='/Receipt'>

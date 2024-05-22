@@ -8,10 +8,20 @@ import { TbMailFilled } from "react-icons/tb";
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
 import LspuLogo1 from '../logo/LSPUlogo.png'
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from 'react-router-dom'
 import Load from './Loading'
+//AOS
+// import AOS from 'aos'
+// import 'aos/dist/aos.css'
+
 const login = () => {
+//    //Aos
+//    useEffect(() => {
+//     AOS.init({
+//         duration: 1200
+//     })
+// }, [])
 
   const [showpass, setshowpass] = useState(false)
   const [changeicon, setchangeicon] = useState(true)
