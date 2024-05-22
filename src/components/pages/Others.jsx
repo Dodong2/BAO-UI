@@ -31,42 +31,42 @@ const Others = () => {
     <div className="other-container">
     <div className="other-header"><h1>ALSO in BAO</h1></div>
     {/*-----Other service 1-----*/}
-    <div className="other-serv1">
+    <div className="other-serv1" data-aos="fade-up" data-aos-duration="2000">
     <div className="other-contents1">
     <img src={otherProd1}/>
     <div className="other-action1">
     <h1>Tilanggit - P100</h1>
-    <button data-aos="flip-left"><FaShoppingBasket/> ADD TO BASKET</button>
+    <button><FaShoppingBasket/> ADD TO BASKET</button>
     </div>
     </div>
     </div>
         {/*-----Other service 2-----*/}
-        <div className="other-serv2">
+        <div className="other-serv2" data-aos="fade-up" data-aos-duration="2000">
         <div className="other-contents1">
         <img src={otherProd2}/>
         <div className="other-action2">
         <h1>Bottled Water - P10 (350ml), P15 (500ml)</h1>
-        <button data-aos="flip-left"><FaShoppingBasket/> ADD TO BASKET</button>
+        <button><FaShoppingBasket/> ADD TO BASKET</button>
         </div>
         </div>
         </div>
             {/*-----Other service 3-----*/}
-    <div className="other-serv3">
+    <div className="other-serv3" data-aos="fade-up" data-aos-duration="2000">
     <div className="other-contents1">
     <img src={otherProd3}/>
     <div className="other-action3">
     <h1>Cream Banana Cake & Cream Ube Cake - P100</h1>
-    <button data-aos="flip-left"><FaShoppingBasket/> ADD TO BASKET</button>
+    <button><FaShoppingBasket/> ADD TO BASKET</button>
     </div>
     </div>
     </div>
     {/*-----Other service 4-----*/}
-    <div className="other-serv4">
+    <div className="other-serv4" data-aos="fade-up" data-aos-duration="2000">
     <div className="other-contents1">
     <img src={otherProd4}/>
     <div className="other-action4">
     <h1>Home Made Kimchi - P100(small), P200(Big)</h1>
-    <button data-aos="flip-left"><FaShoppingBasket/> ADD TO BASKET</button>
+    <button><FaShoppingBasket/> ADD TO BASKET</button>
     </div>
     </div>
     </div>
