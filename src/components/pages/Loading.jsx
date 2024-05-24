@@ -18,7 +18,7 @@ const Loading = () => {
     <div className="main-container">
     <div className={`${Load["loading-container"]} ${isLoading ? 'visible' : 'hidden'}`}>
     <div className={Load["loading-contents"]}>
-    <img src={LspuLogo1}/>
+    <img src={LspuLogo1}/><br/><br/>
     <div className={Load["loader"]}></div>
     </div>
     </div>
