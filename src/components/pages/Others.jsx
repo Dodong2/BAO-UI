@@ -41,7 +41,7 @@ const Others = () => {
     </div>
     </div>
         {/*-----Other service 2-----*/}
-        <div className="other-serv2" data-aos="fade-up" data-aos-duration="2000">
+        <div className="other-serv2" data-aos="fade-up" data-aos-duration="1500">
         <div className="other-contents1">
         <img src={otherProd2}/>
         <div className="other-action2">
@@ -51,7 +51,7 @@ const Others = () => {
         </div>
         </div>
             {/*-----Other service 3-----*/}
-    <div className="other-serv3" data-aos="fade-up" data-aos-duration="2000">
+    <div className="other-serv3" data-aos="fade-up" data-aos-duration="1500">
     <div className="other-contents1">
     <img src={otherProd3}/>
     <div className="other-action3">
@@ -61,7 +61,7 @@ const Others = () => {
     </div>
     </div>
     {/*-----Other service 4-----*/}
-    <div className="other-serv4" data-aos="fade-up" data-aos-duration="2000">
+    <div className="other-serv4" data-aos="fade-up" data-aos-duration="1500">
     <div className="other-contents1">
     <img src={otherProd4}/>
     <div className="other-action4">

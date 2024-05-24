@@ -82,7 +82,7 @@ const Home = () => {
               </div>
             </div><br/><br/>
             {/*-----Service 2-----*/}
-            <div className='serv2' data-aos="fade-right" data-aos-duration="2800">
+            <div className='serv2' data-aos="fade-right" data-aos-duration="1500">
             <div className='content'>
                 <h1>OFFICIAL UNIVERSITY MERCHENDISE</h1>
               </div><br />
@@ -92,7 +92,7 @@ const Home = () => {
                 </Link>
               </div></div><br/><br/>
               {/*-----Service 3-----*/}
-            <div className='serv3' data-aos="fade-right" data-aos-duration="2800">
+            <div className='serv3' data-aos="fade-right" data-aos-duration="1500">
             <div className='content'>
                 <h1>SERVICES</h1>
               </div><br />
@@ -103,7 +103,7 @@ const Home = () => {
               </div>
             </div><br/><br/>
             {/*-----Service 4-----*/}
-            <div className='serv4' data-aos="fade-right" data-aos-duration="2800">
+            <div className='serv4' data-aos="fade-right" data-aos-duration="1500">
             <div className='content'>
                 <h1>OTHER PRODUCTS</h1>
               </div><br />
