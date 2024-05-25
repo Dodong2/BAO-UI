@@ -17,16 +17,24 @@ export default function App() {
   })
   }, [])
 
-  const [count, setcount] = useState(0);
+  const [count, setcount] = useState(Array(BooksData.length).fill(0));
   //add value
-  const IncrementValue = () => {
-    setcount((count) => count + 1)
+  const IncrementValue = (index) => {
+    setcount((prevCounts) => {
+      const newCounts = [...prevCounts]
+      newCounts[index] += 1
+      return newCounts 
+    })
   }
   //minos value
-  const DecrementCount = () => {
-    if (count > 0) {
-      setcount(count - 1)
-    }
+  const DecrementCount = (index) => {
+    setcount((prevCounts) => {
+      const newCounts = [...prevCounts]
+      if (newCounts[index] > 0) {
+        newCounts[index] -= 1
+      }
+      return newCounts
+    })
   }
 
   return (
@@ -41,9 +49,9 @@ export default function App() {
               <h1>{book.productName} <br /><span>{book.price}</span></h1>
             </div><br />
             <div className='card-stocks'>
-              <button onClick={DecrementCount}><RiSubtractFill /></button>
-              <div>{count}</div>
-              <button onClick={IncrementValue}><IoMdAdd /></button>
+              <button onClick={() => DecrementCount(index)}><RiSubtractFill /></button>
+              <div>{count[index]}</div>
+              <button onClick={() => IncrementValue(index)}><IoMdAdd /></button>
             </div>
           </div>
         ))}
