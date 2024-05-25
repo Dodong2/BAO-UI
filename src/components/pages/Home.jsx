@@ -87,7 +87,7 @@ const Home = () => {
               </div>
             </div><br/>
             {/*-----Service 2-----*/}
-            <div className='serv2' data-aos="fade-right" data-aos-duration="3500">
+            <div className='serv2' data-aos="fade-right" data-aos-duration="4000">
             <div className='content'>
                 <h1>OFFICIAL UNIVERSITY MERCHENDISE</h1>
               </div><br />
