@@ -21,6 +21,11 @@ const Home = () => {
   })
   }, [])
 
+  //for top page view
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
     <Load/>
@@ -80,7 +85,7 @@ const Home = () => {
                 <button>GO TO SUPPLIES &gt; </button>
                 </Link>
               </div>
-            </div><br/><br/>
+            </div><br/>
             {/*-----Service 2-----*/}
             <div className='serv2' data-aos="fade-right" data-aos-duration="1500">
             <div className='content'>
@@ -90,18 +95,18 @@ const Home = () => {
               <Link to="/Merchandise">
                 <button>GO TO MERCHENDISES &gt; </button>
                 </Link>
-              </div></div><br/><br/>
+              </div></div><br/>
               {/*-----Service 3-----*/}
             <div className='serv3' data-aos="fade-right" data-aos-duration="1500">
             <div className='content'>
                 <h1>SERVICES</h1>
-              </div><br />
+              </div>
               <div className='content'>
               <Link to="/About">
                 <button>GO TO SERVICES &gt; </button>
                 </Link>
               </div>
-            </div><br/><br/>
+            </div><br/>
             {/*-----Service 4-----*/}
             <div className='serv4' data-aos="fade-right" data-aos-duration="1500">
             <div className='content'>
@@ -112,7 +117,7 @@ const Home = () => {
                 <button>GO TO OTHERS &gt; </button>
                 </Link>
               </div>
-            </div><br/><br/>
+            </div><br/>
           </div>
         </div>
         <Contact />

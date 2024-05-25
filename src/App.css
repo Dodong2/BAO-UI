@@ -1003,6 +1003,16 @@ a:-webkit-any-link {
 
 /*--------Supply Product css---------*/
 .supp-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.card-board:hover {
+  box-shadow: 1px 0px 5px 5px var(--black);
+}
+.card-board {
   background: var(--white);
   padding: 25px;
   display: flex;
@@ -1011,11 +1021,8 @@ a:-webkit-any-link {
   flex-direction: column;
   border-radius: 20px;
   transition: all ease .2s;
+  flex-wrap: wrap;
 }
-.supp-card:hover {
-  box-shadow: 1px 0px 5px 5px var(--black);
-}
-
 
 .card-contents {
   position: relative;
@@ -1141,7 +1148,7 @@ a:-webkit-any-link {
   left: 12%;
   font-family: "Poppins-ExtraBold";
   font-style: italic;
-  -webkit-text-stroke: 3px var(--font-color);
+  -webkit-text-stroke: 2.2px var(--font-color);
 }
 
 .other-action1 button,
@@ -1900,21 +1907,25 @@ th, td {
   .services .serv1 {
     background: url(./components/image/supp.png);
     background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .services .serv2 {
     background: url(./components/image/merch.png);
     background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .services .serv3 {
     background: url(./components/image/Services.png);
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .services .serv4 {
     background: url(./components/image/other.png);
     background-size: contain;
+    background-repeat: no-repeat;
   }
 
   /*--------services h1 set---------*/
@@ -2166,7 +2177,7 @@ th, td {
     left: 3%;
     font-family: "Poppins-ExtraBold";
     font-style: italic;
-    -webkit-text-stroke: 1.2px var(--font-color);
+    -webkit-text-stroke: 1px var(--font-color);
     font-size: 1.1em;
     color: var(--white);
   }

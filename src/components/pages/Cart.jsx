@@ -4,7 +4,7 @@ import Navbar from './Navbar'
 import { RiSubtractFill } from "react-icons/ri";
 import { IoMdAdd } from "react-icons/io";
 import { FaTrashAlt } from "react-icons/fa";
-import testImage from '../image/supp1.png'
+import testImage from '/supp1.png'
 import Load from './Loading'
 //AOS
 import AOS from 'aos'
@@ -58,7 +58,7 @@ const Cart = () => {
               </div>
             </div>
           </div>
-          <div className='items-selection3' data-aos="fade-right" data-aos-duration="2600">
+          <div className='items-selection3' data-aos="fade-right" data-aos-duration="1600">
             <div className='selection3'>
               <h1>Total: <span>P 510.00</span></h1>
               <Link to='/Receipt'>
