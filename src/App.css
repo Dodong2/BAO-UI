@@ -487,8 +487,10 @@ a:-webkit-any-link {
   flex-direction: column;
   gap: 20px;
   padding: 50px;
-  padding-left:50px;
-  padding-right:50px;
+  padding-top: 100px;
+  padding-bottom: 155px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 .element2 h1,
 .element2 p {
@@ -1922,9 +1924,11 @@ th, td {
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    padding: 20px;
-    padding-left:40px;
-    padding-right:40px;
+    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 45px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .element2 {
@@ -1938,6 +1942,30 @@ th, td {
     font-size: 0.6em;
   }
 
+  .swiper-container .swiper-slide:nth-of-type(3) .element2{
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  .swiper-container .swiper-slide:nth-of-type(5) .element2{
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  .swiper-container .swiper-slide:nth-of-type(6) .element2{
+    padding-top: 45px;
+    padding-bottom: 21px;
+  }
+  .swiper-container .swiper-slide:nth-of-type(7) .element2{
+    padding-top: 33px;
+    padding-bottom: 20px;
+  }
+  .swiper-container .swiper-slide:nth-of-type(8) .element2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .swiper-container .swiper-slide:nth-of-type(9) .element2{
+    padding-top: 55px;
+    padding-bottom: 57px;
+  }
   /*--------Home Page services---------*/
   /*--------services background---------*/
   .services {
