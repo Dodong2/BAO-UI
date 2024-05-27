@@ -476,6 +476,38 @@ a:-webkit-any-link {
   font-size: 1.7em;
 }
 
+.element2 {
+  background: var(--cart-bgcolor);
+  border-radius: 50px;
+}
+.swiper-container .element2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px;
+  padding-left:50px;
+  padding-right:50px;
+}
+.element2 h1,
+.element2 p {
+  text-align: justify;
+  min-width: fit-content;
+  flex: 1;
+}
+
+.element2 h1 {
+  color: var(--black);
+  font-family: "Poppins-ExtraBold";
+  font-size: 4em;
+}
+.element2 p {
+  color: var(--black);
+  font-family: "Poppins-ExtraBold";
+  font-size: 1em;
+}
+
 /*--------Home Page services---------*/
 /*--------services background---------*/
 .services {
@@ -1884,6 +1916,28 @@ th, td {
     font-size: 0.6em;
   }
 
+  .swiper-container .element2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    padding-left:40px;
+    padding-right:40px;
+  }
+
+  .element2 {
+    border-radius: 0px;
+  }
+  .element2 h1 {
+    font-size: 1.2em;
+  }
+
+  .element2 p {
+    font-size: 0.6em;
+  }
+
   /*--------Home Page services---------*/
   /*--------services background---------*/
   .services {
@@ -1979,28 +2033,28 @@ th, td {
   }
 
   .serv1 .content button {
-    right: -20%;
+    right: -15%;
     color: var(--services-color-text1);
   }
 
   .serv2 .content button {
     position: absolute;
     top: 70%;
-    right: -30%;
+    right: -20%;
     color: var(--services-color-text2);
   }
 
   .serv3 .content button {
     position: absolute;
     top: 70%;
-    right: -20%;
+    right: -15%;
     color: var(--services-color-text3);
   }
 
   .serv4 .content button {
     position: absolute;
     top: 70%;
-    right: -20%;
+    right: -15%;
     color: var(--services-color-text4);
   }
 
@@ -2526,6 +2580,51 @@ th, td {
   .right ul {
     display: none;
   }
+
+  /*--------Home Page services---------*/
+  /*--------services background---------*/
+  .services {
+    padding: 0px;
+  }
+
+  .services .serv1,
+  .services .serv2,
+  .services .serv3,
+  .services .serv4 {
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+    display: flex;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    position: block;
+    padding-right: 6px;
+    padding: 61px;
+  }
+
+  .services .serv1 {
+    background: url(./components/image/supp.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .services .serv2 {
+    background: url(./components/image/merch.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .services .serv3 {
+    background: url(./components/image/Services.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .services .serv4 {
+    background: url(./components/image/other.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
 }
 
 /* For Desktops */
